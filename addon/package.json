@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.7",
-    "@embroider/util": "^1.10.0"
+    "@embroider/util": "^1.10.0",
+    "concurrently": "^8.2.2"
   },
   "peerDependencies": {
     "ember-source": "^3.20 || ^4.0.0",
@@ -63,9 +64,10 @@
     "start": "rollup --config --watch",
     "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
     "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix",
-    "lint:types": "glint --declaration"
+    "lint:js:fix": "eslint . --fix"
   },
   "ember-addon": {
     "main": "addon-main.js",
