@@ -60,7 +60,12 @@
   "scripts": {
     "build": "rollup --config",
     "prepublishOnly": "rollup --config",
-    "start": "rollup --config --watch"
+    "start": "rollup --config --watch",
+    "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:types": "glint --declaration"
   },
   "ember-addon": {
     "main": "addon-main.js",
@@ -89,6 +94,14 @@
     "@babel/plugin-transform-class-properties": "^7.23.3",
     "@embroider/addon-dev": "^4.1.3",
     "@rollup/plugin-babel": "^6.0.4",
-    "rollup": "^4.9.4"
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-ember": "^11.10.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-qunit": "^8.0.0",
+    "prettier": "^3.0.1",
+    "rollup": "^4.9.4",
+    "stylelint-prettier": "^4.0.2"
   }
 }

@@ -4,7 +4,7 @@ import { computed } from '@ember/object';
 import { and, oneWay, readOnly, not } from '@ember/object/computed';
 import { macroCondition, dependencySatisfies } from '@embroider/macros';
 import { inject as service } from '@ember/service';
-import Component from '@ember/component';
+import Component from '@glimmer/component';
 import layout from './template';
 
 let hasLiquidFireDep;
