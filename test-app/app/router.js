@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import EmberRouter from '@ember/routing/router';
-import config from 'dummy/config/environment';
+import config from 'test-app/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
