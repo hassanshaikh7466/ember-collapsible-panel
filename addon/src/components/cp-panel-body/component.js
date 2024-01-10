@@ -4,7 +4,7 @@ import { ensureSafeComponent } from '@embroider/util';
 import Component from '@glimmer/component';
 import { computed } from '@ember/object';
 import { assert } from '@ember/debug';
-import layout from './template';
+import layout from './component';
 
 let LiquidIf, hasRealLiquidIf;
 if (macroCondition(dependencySatisfies('liquid-fire', '*'))) {

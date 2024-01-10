@@ -2,9 +2,6 @@
   "name": "ember-collapsible-panel",
   "version": "6.0.1",
   "description": "An unopinionated, zero-dependency panel and accordion",
-  "keywords": [
-    "ember-addon"
-  ],
   "homepage": "https://adopted-ember-addons.github.io/ember-collapsible-panel/",
   "bugs": {
     "url": "https://github.com/adopted-ember-addons/ember-collapsible-panel/issues"
@@ -73,7 +70,13 @@
     "main": "addon-main.js",
     "type": "addon",
     "version": 2,
-    "app-js": {}
+    "app-js": {
+      "./components/cp-panel-body/component.js": "./dist/_app_/components/cp-panel-body/component.js",
+      "./components/cp-panel-toggle/component.js": "./dist/_app_/components/cp-panel-toggle/component.js",
+      "./components/cp-panel/component.js": "./dist/_app_/components/cp-panel/component.js",
+      "./components/cp-panels/component.js": "./dist/_app_/components/cp-panels/component.js",
+      "./services/panel-actions.js": "./dist/_app_/services/panel-actions.js"
+    }
   },
   "release-it": {
     "plugins": {
