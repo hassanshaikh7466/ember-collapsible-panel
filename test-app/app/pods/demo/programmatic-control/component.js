@@ -1,6 +1,6 @@
 /* eslint-disable ember/no-actions-hash, ember/no-classic-classes, ember/no-classic-components, ember/no-get, ember/require-tagless-components, prettier/prettier */
 import { inject as service } from '@ember/service';
-import Component from '@glimmer/component';
+import Component from '@ember/component';
 
 // BEGIN-SNIPPET programmatic-control
 export default Component.extend({
