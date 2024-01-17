@@ -1,8 +1,10 @@
 /* eslint-disable prettier/prettier */
 'use strict';
 
+/* eslint-disable n/no-unpublished-require */
 const getChannelURL = require('ember-source-channel-url');
 const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
+/* eslint-disable n/no-unpublished-require */
 
 module.exports = async function () {
   return {

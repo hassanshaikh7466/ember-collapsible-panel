@@ -2,8 +2,8 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'dummy',
-    podModulePrefix: 'dummy/pods',
+    modulePrefix: 'test-app',
+    podModulePrefix: 'test-app/pods',
     environment,
     rootURL: '/',
     locationType: 'history',

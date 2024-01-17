@@ -5,7 +5,7 @@ import { and, oneWay, readOnly, not } from '@ember/object/computed';
 import { macroCondition, dependencySatisfies } from '@embroider/macros';
 import { inject as service } from '@ember/service';
 import Component from '@ember/component';
-import layout from './template';
+import layout from './component';
 
 let hasLiquidFireDep;
 if (macroCondition(dependencySatisfies('liquid-fire', '*'))) {
